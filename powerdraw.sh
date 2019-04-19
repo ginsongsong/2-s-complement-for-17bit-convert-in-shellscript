@@ -3,7 +3,8 @@
 bin2hex() {
        echo "obase=10;ibase=2;$1"|bc
 }
-
+#this example is tranasfer the 2s complement to dec. which means you can only transfer the bitwise data to dec.
+#if you want to use the hex directly, you should adjust the obase:16(hex)10(dec)2(binary) to your own bits in echo.
 src=$1
 
 exec < $src
